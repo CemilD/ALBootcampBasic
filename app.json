@@ -1,0 +1,34 @@
+{
+  "id": "76af0b03-58c9-424e-9a94-8828d24ef081",
+  "name": "Bootcamp",
+  "publisher": "Cemil Demirezen",
+  "version": "26.1.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+
+  ],
+  "screenshots": [],
+  "idRanges": [
+      {
+          "from": 50000,
+          "to": 50900
+      }
+  ],
+  "resourceExposurePolicy": {
+      "allowDebugging": true,
+      "allowDownloadingSource": true,
+      "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "features": [
+      "NoImplicitWith"
+  ],
+  "application": "26.0.30643.32100"
+
+}
