@@ -43,6 +43,13 @@ table 50003 "Work Instruction"
             ToolTip = 'The number of times the work instruction has been used.';
         }
     }
+        keys
+    {
+        key(Key1; "Work Instruction ID")
+        {
+            Clustered = true;
+        }
+    }
 
 
 }
