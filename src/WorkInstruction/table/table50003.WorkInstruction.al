@@ -2,6 +2,8 @@ table 50003 "Work Instruction"
 {
     Caption = 'Work Instruction';
     DataClassification = ToBeClassified;
+    LookupPageId = WorkInstructionList;
+;
 
 
     fields
