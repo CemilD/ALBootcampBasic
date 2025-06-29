@@ -22,6 +22,21 @@ pageextension 50006 PageListExt extends "Item List"
                     CurrPage.Update(false); // Page neu laden, damit Filter greifen
                 end;
             }
+
+            action(HowWorksRecord)
+            {
+                ApplicationArea = All;
+                Caption = 'How Works Records';
+                ToolTip = 'Shows how to work with records.';
+                Image = Apply;
+                trigger OnAction()
+                var
+                    MyFavorites: Codeunit "MyFavorites";
+                    Item: Record Item;
+                begin
+                    MyFavorites.HowWokrsRecords(Item);
+                end;
+            }
         }
     }
 
