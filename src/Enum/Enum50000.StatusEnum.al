@@ -11,5 +11,6 @@ enum 50002 Status
     value(3; Obsolete)
     {
     }
+    value(4; Closed)
 
 }
