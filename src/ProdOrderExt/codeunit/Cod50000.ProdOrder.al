@@ -56,7 +56,7 @@ codeunit 50000 ProdOrder
 
     end;
 
-    // Function to Filter status open
+    // Function to Filter status new
     procedure FilterStatusNew(var BOMList: Record "Production BOM Header")
     var
         index: Integer;

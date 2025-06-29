@@ -4,15 +4,16 @@ pageextension 50005 ItemFavorites extends "Item Card"
     {
         addafter("Item Category Code")
         {
-            field("MyFavorite"; Rec."My Favorite")
+            field("My Favorite"; Rec."My Favorite")
             {
                 ApplicationArea = All;
                 Caption = 'My Favorite';
-                ToolTip = 'Indicates if this item is marked as a favorite.';
+                ToolTip = 'Indicates if this item is marked as my favorite Item';
                 Visible = true;
                 Editable = true;
             }
         }
+
     }
     
 }
