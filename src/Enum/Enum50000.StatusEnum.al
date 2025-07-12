@@ -8,11 +8,9 @@ enum 50002 Status
     value(1; InProgress)
     {
     }
-    value(3; Obsolete)
+    value(3; closed)
     {
     }
-    value(4; Closed)
-    {
-    }
+
 
 }

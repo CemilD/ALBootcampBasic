@@ -8,7 +8,7 @@ codeunit 50002 MyFavorites
         if Item.FindSet() then begin
             index := Item.Count();
         end;
-        Message('There are %1 items in the favorites list.', index);
+        Message('Test: There are %1 items in the favorites list.', index);
     end;
 
 
