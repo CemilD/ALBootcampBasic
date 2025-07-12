@@ -1,4 +1,4 @@
-table 50000 WorkingWithTrigger
+table 50005 WorkingWithTrigger
 {
     Caption = 'Working With Trigger';
     TableType = Normal;
@@ -30,7 +30,15 @@ table 50000 WorkingWithTrigger
             begin
                 if page.RunModal(0, Item) = Action::LookupOK then 
                     ItemNo := Item."No.";
+                    MyField := Item.Description;
             end;
+        }
+        field(30;MyField; Text[100])
+        {
+            Caption = 'My Field';
+            DataClassification = CustomerContent;
+            ToolTip = 'An example field for demonstration purposes.';
+            Editable = false;
         }
     }
     

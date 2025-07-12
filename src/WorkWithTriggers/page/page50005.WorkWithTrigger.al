@@ -1,8 +1,9 @@
-page 50000 WorkWithTrigger
+page 50005 WorkWithTrigger
 {
     Caption = 'Work With Trigger';
     PageType = List;
     ApplicationArea = All;
+    UsageCategory = Lists;
     SourceTable = WorkingWithTrigger;
     
    
@@ -24,7 +25,11 @@ page 50000 WorkWithTrigger
                 field(ItemNo; Rec.ItemNo)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'The item number associated with the working with trigger table.';
+                }
+                field(MyField; Rec.MyField)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'An example field for demonstration purposes.';
                 }
             }
         }
