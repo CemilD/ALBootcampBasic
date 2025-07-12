@@ -12,5 +12,7 @@ enum 50002 Status
     {
     }
     value(4; Closed)
+    {
+    }
 
 }
