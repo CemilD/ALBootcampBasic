@@ -2,6 +2,7 @@ page 50003 WorkInstructionList
 
 {
     PageType = List;
+    Caption = 'Work Instruction List';
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Work Instruction";
