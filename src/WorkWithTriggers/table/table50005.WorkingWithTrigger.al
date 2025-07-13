@@ -2,7 +2,7 @@ table 50005 WorkingWithTrigger
 {
     Caption = 'Working With Trigger';
     TableType = Normal;
-    DataClassification = CustomerContent;
+    DataClassification = ToBeClassified;
     Extensible = true;
     
     fields
@@ -28,9 +28,10 @@ table 50005 WorkingWithTrigger
             var
                 Item: Record Item;
             begin
-                if page.RunModal(0, Item) = Action::LookupOK then 
+                if page.RunModal(Page::"Item List", Item) = Action::LookupOK then begin
                     ItemNo := Item."No.";
                     MyField := Item.Description;
+                    end;
             end;
         }
         field(30;MyField; Text[100])
