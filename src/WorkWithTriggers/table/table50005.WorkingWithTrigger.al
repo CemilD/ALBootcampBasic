@@ -4,21 +4,21 @@ table 50005 WorkingWithTrigger
     TableType = Normal;
     DataClassification = ToBeClassified;
     Extensible = true;
-    
+
     fields
     {
-        field(1;KeyField; Code[20])
+        field(1; KeyField; Code[20])
         {
             Caption = 'Key Field';
             DataClassification = CustomerContent;
             ToolTip = 'The key field for the working with trigger table.';
         }
-        field(10;Workcenter; Text[100])
+        field(10; Workcenter; Text[100])
         {
             Caption = 'Workcenter';
             DataClassification = CustomerContent;
         }
-        field(20;ItemNo; Code[20])
+        field(20; ItemNo; Code[20])
         {
             Caption = 'Item No.';
             DataClassification = CustomerContent;
@@ -31,10 +31,10 @@ table 50005 WorkingWithTrigger
                 if page.RunModal(Page::"Item List", Item) = Action::LookupOK then begin
                     ItemNo := Item."No.";
                     MyField := Item.Description;
-                    end;
+                end;
             end;
         }
-        field(30;MyField; Text[100])
+        field(30; MyField; Text[100])
         {
             Caption = 'My Field';
             DataClassification = CustomerContent;
@@ -42,7 +42,7 @@ table 50005 WorkingWithTrigger
             Editable = false;
         }
     }
-    
+
     keys
     {
         key(Key1; KeyField)
@@ -50,29 +50,30 @@ table 50005 WorkingWithTrigger
             Clustered = true;
         }
     }
-    
-    
+
+
     var
         myInt: Integer;
-    
+
     trigger OnInsert()
     begin
-        
+        Message('OnInsert Trigger Called from User: %1', UserId);
+
     end;
-    
+
     trigger OnModify()
     begin
-        
+
     end;
-    
+
     trigger OnDelete()
     begin
-        
+
     end;
-    
+
     trigger OnRename()
     begin
-        
+
     end;
-    
+
 }

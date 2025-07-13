@@ -8,7 +8,12 @@ pageextension 50004 "Item Work Instruction" extends "Item Card"
             {
                 ApplicationArea = All;
                 Caption = 'Work Instruction';
-                ToolTip = 'Specifies the work instruction number.';
+            }
+            field("PrdPlanner"; Rec."PrdPlanner")
+            {
+                ApplicationArea = All;
+                Caption = 'Production Planner';
+                ToolTip = 'Name of the production planner responsible for the work instruction.';
             }
         }
     }
