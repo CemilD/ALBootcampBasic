@@ -75,4 +75,23 @@ codeunit 50000 ProdOrder
 
     end;
 
+    // Function to fill a temporary table 50000 PrDDispoPilot with Items and ProdORderNo
+    procedure FillPRDDispoPilot(var PRDDispoPilot: Record "PRDDispoPilot" temporary);
+    var
+        ProdOrder: Record "Production Order";
+    begin
+        ProdOrder.Reset();
+        ProdOrder.SetRange(Status, ProdOrder.Status::Released);
+        if ProdOrder.FindSet() then begin
+            repeat
+                PRDDispoPilot.Init();
+                PRDDispoPilot.ItemNo := ProdOrder."No.";
+                PRDDispoPilot.Insert();
+            until ProdOrder.Next() = 0;
+
+        end;
+
+    end;
+
+
 }

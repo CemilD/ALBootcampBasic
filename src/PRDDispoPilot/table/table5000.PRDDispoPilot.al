@@ -2,15 +2,17 @@ table 50000 PRDDispoPilot
 {
     Caption = 'Disposition Pilot';
     DataClassification = CustomerContent;
+    TableType = Temporary;
 
     
     fields
     {
-        field(5;ItemNo; Code[20])
+        field(5;ItemNo; code[20])
         {
             Caption = 'Item No.';
             DataClassification = CustomerContent;
             ToolTip = 'Unique identifier for the item in the disposition pilot.';
+
         }
         field(10;ItemName; Text[100])
         {
@@ -26,7 +28,7 @@ table 50000 PRDDispoPilot
             FieldClass = FlowField;
             CalcFormula = lookup(item.PrdPlanner where("No." = field(ItemNo)));
         }
-            
+
 
     }
     
