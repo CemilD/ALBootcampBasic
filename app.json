@@ -2,6 +2,7 @@
   "id": "76af0b03-58c9-424e-9a94-8828d24ef081",
   "name": "Bootcamp",
   "publisher": "Cemil Demirezen",
+  "target": "CloudAndOnPrem",
   "version": "26.1.0.0",
   "brief": "Bootcamp is a sample app that demonstrates the use of various features in Business Central.",
   "description": "Bootcamp is a sample app that demonstrates the use of various features in Business Central. It includes examples of how to work with pages, reports, and other objects, as well as how to implement best practices in AL development.",
