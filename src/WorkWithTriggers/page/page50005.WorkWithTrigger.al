@@ -33,11 +33,16 @@ page 50005 WorkWithTrigger
                 }
             }
         }
-        area(Factboxes)
-        {
-            
-        }
     }
+
+            views
+        {
+            view(MyView)
+            {
+                Filters = where(ItemNo = filter(<>''));
+            }
+                   // Define any views if necessary
+        }
     
 
 }
